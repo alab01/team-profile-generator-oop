@@ -17,7 +17,8 @@ const generateHTML = function(data) {
              <title>Document</title>
              <link rel="stylesheet" type="text/css" href="style.css">
          </head>
-         <body>`;
+         <body>
+         <header class= page-title>My Team</header>`;
 
     var middle = `<div class='main-container'>`;
     for (var member of data) {
@@ -35,9 +36,9 @@ const generateHTML = function(data) {
 function buildHtmlForManager(manager) {
     var name = `<div class='member-name'>${manager.name}</div>`;
     var position = `<div class='member-position'>Manager</div>`;
-    var id = `<div class='member-id'>${manager.id}</div>`;
-    var email = `<div class='member-email'>${manager.email}</div>`;
-    var officeNumber = `<div class='member-officeNumber'>${manager.officeNumber}</div>`;
+    var id = `<div class='member-id'>ID: ${manager.id}</div>`;
+    var email = `<div class='member-email'>Email: ${manager.email}</div>`;
+    var officeNumber = `<div class='member-officeNumber'>Office Number: ${manager.officeNumber}</div>`;
     var output = `<div class='member'>${name}${position}${id}${email}${officeNumber}</div>`;
     return output;
 }
@@ -45,9 +46,9 @@ function buildHtmlForManager(manager) {
 function buildHtmlForEngineer(engineer) {
     var name = `<div class='member-name'>${engineer.name}</div>`;
     var position = `<div class='member-position'>Engineer</div>`;
-    var id = `<div class='member-id'>${engineer.id}</div>`;
-    var email = `<div class='member-email'>${engineer.email}</div>`;
-    var github = `<div class='member-github'>${engineer.github}</div>`;
+    var id = `<div class='member-id'>ID: ${engineer.id}</div>`;
+    var email = `<div class='member-email'>Email: ${engineer.email}</div>`;
+    var github = `<div class='member-github'>GitHub: ${engineer.github}</div>`;
     var output = `<div class='member'>${name}${position}${id}${email}${github}</div>`;
     return output;
 }
@@ -55,9 +56,9 @@ function buildHtmlForEngineer(engineer) {
 function buildHtmlForIntern(intern) {
     var name = `<div class='member-name'>${intern.name}</div>`;
     var position = `<div class='member-position'>Intern</div>`;
-    var id = `<div class='member-id'>${intern.id}</div>`;
-    var email = `<div class='member-email'>${intern.email}</div>`;
-    var school = `<div class='member-school'>${intern.school}</div>`;
+    var id = `<div class='member-id'>ID: ${intern.id}</div>`;
+    var email = `<div class='member-email'>Email: ${intern.email}</div>`;
+    var school = `<div class='member-school'>School: ${intern.school}</div>`;
     var output = `<div class='member'>${name}${position}${id}${email}${school}</div>`;
     return output;
 }
@@ -160,18 +161,6 @@ mangagerPrompt().then(employeePrompt).then( data => {
         err ? console.log(err) : console.log('Success!')
     );
 });
-
-
-
-//inquirer.prompt(mangagerPrompt().then(employeePrompt)).then((data) => {
-    //console.log(data);
-    // const htmlContent = generateHTML(data);
-    // console.log(htmlContent);
-
-    // fs.writeFile('index.html', htmlContent, (err) =>
-    //     err ? console.log(err) : console.log('Success!')
-    // );
-//});
 
 
 

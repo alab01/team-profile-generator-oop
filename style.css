@@ -4,10 +4,11 @@
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+    padding: 15px;
 }
 
 .member {
-    background-color: grey;
+    background-color: rgb(155, 149, 149);
     width: 200px;
     height: 150px;
     display: flex;
@@ -15,4 +16,22 @@
     justify-content: center;
     align-items: center;
     margin-bottom: 25px;
+}
+
+.page-title {
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+    height: 70px;
+    background-color: rgb(143, 197, 234);
+}
+
+.member-name,
+.member-position,
+.member-id,
+.member-email,
+.member-officeNumber,
+.member-github,
+.member-school {
+    padding: 6px;
 }
