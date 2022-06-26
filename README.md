@@ -6,6 +6,6 @@
 
 #### ![team-profile-generator Img] (assets/img/team-profile-generator-img.png)
 
-##### [Recorded Video link]: https://drive.google.com/file/d/1XidvUTJynG2RJZEhLrUbSZcnG31n0Llj/view
+##### [Recorded Video link]: https://drive.google.com/file/d/16vSHV80nZQ7CDSZ-nl_FJweWqk7bhbh7/view
 
 ###### [HTML made on video recording] (index.html)
